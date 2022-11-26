@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
@@ -346,7 +346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
@@ -585,7 +585,7 @@ GameObject:
   - component: {fileID: 629275725}
   - component: {fileID: 629275724}
   m_Layer: 5
-  m_Name: New Word
+  m_Name: New Word Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,7 +735,7 @@ GameObject:
   - component: {fileID: 799967944}
   - component: {fileID: 799967941}
   m_Layer: 5
-  m_Name: Try Again
+  m_Name: Try Again Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1047,7 +1047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1401,7 +1401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Spacing: 16
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
+  m_ChildControlWidth: 1
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
@@ -1759,6 +1759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bb465afe735a1a4db8612fff165f671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testWord: crimp
   emptyState:
     fillColor: {r: 0.07058824, g: 0.07058824, b: 0.07450981, a: 1}
     outlineColor: {r: 0.22745098, g: 0.22745098, b: 0.23529412, a: 1}
@@ -1789,7 +1790,7 @@ GameObject:
   - component: {fileID: 1962657232}
   - component: {fileID: 1962657231}
   m_Layer: 5
-  m_Name: Invalid Word
+  m_Name: Invalid Word Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1953,7 +1954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2140,7 +2141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1203.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1739235455358706226, guid: 1fd29634efde72d49abaf622c425fc34, type: 3}
       propertyPath: m_SizeDelta.y
