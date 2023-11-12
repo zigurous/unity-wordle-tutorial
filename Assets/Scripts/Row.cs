@@ -4,7 +4,7 @@ public class Row : MonoBehaviour
 {
     public Tile[] tiles { get; private set; }
 
-    public string word
+    public string Word
     {
         get
         {

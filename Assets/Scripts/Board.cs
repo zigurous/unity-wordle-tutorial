@@ -11,7 +11,6 @@ public class Board : MonoBehaviour
     };
 
     private Row[] rows;
-
     private int rowIndex;
     private int columnIndex;
 
@@ -109,7 +108,7 @@ public class Board : MonoBehaviour
 
     private void SubmitRow(Row row)
     {
-        if (!IsValidWord(row.word))
+        if (!IsValidWord(row.Word))
         {
             invalidWordText.SetActive(true);
             return;
