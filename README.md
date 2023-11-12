@@ -1,6 +1,6 @@
-# Project Title
+# Wordle
 
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh elit, iaculis id condimentum vitae, efficitur nec lorem. Nam convallis ligula vitae velit porta interdum. Donec euismod sem ligula, aliquet lacinia eros mollis molestie. Maecenas et enim mollis lacus ultrices consequat. Quisque vehicula id neque sit amet placerat. Etiam posuere vel ipsum vel tincidunt. Nulla et efficitur urna. Phasellus varius gravida velit non commodo. Vivamus sagittis commodo nibh vitae posuere.
+> Wordle is a web-based word game created and developed by Welsh software engineer Josh Wardle, and owned and published by The New York Times Company since 2022. Players have six attempts to guess a five-letter word, with feedback given for each guess in the form of colored tiles indicating when letters match or occupy the correct position.
 
 - **Difficulty**: Beginner
 - **Topics**: UI, Text, Data
