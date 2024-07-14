@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-1)]
 public class Board : MonoBehaviour
 {
     private static readonly KeyCode[] SUPPORTED_KEYS = new KeyCode[] {
@@ -9,6 +10,8 @@ public class Board : MonoBehaviour
         KeyCode.S, KeyCode.T, KeyCode.U, KeyCode.V, KeyCode.W, KeyCode.X,
         KeyCode.Y, KeyCode.Z,
     };
+
+    private static readonly string[] SEPARATOR = new string[] { "\r\n", "\r", "\n" };
 
     private Row[] rows;
     private int rowIndex;
@@ -44,10 +47,10 @@ public class Board : MonoBehaviour
     private void LoadData()
     {
         TextAsset textFile = Resources.Load("official_wordle_common") as TextAsset;
-        solutions = textFile.text.Split("\n");
+        solutions = textFile.text.Split(SEPARATOR, System.StringSplitOptions.None);
 
         textFile = Resources.Load("official_wordle_all") as TextAsset;
-        validWords = textFile.text.Split("\n");
+        validWords = textFile.text.Split(SEPARATOR, System.StringSplitOptions.None);
     }
 
     public void NewGame()
@@ -78,10 +81,8 @@ public class Board : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             columnIndex = Mathf.Max(columnIndex - 1, 0);
-
             currentRow.tiles[columnIndex].SetLetter('\0');
             currentRow.tiles[columnIndex].SetState(emptyState);
-
             invalidWordText.SetActive(false);
         }
         else if (columnIndex >= currentRow.tiles.Length)
@@ -98,7 +99,6 @@ public class Board : MonoBehaviour
                 {
                     currentRow.tiles[columnIndex].SetLetter((char)SUPPORTED_KEYS[i]);
                     currentRow.tiles[columnIndex].SetState(occupiedState);
-
                     columnIndex++;
                     break;
                 }
@@ -108,7 +108,7 @@ public class Board : MonoBehaviour
 
     private void SubmitRow(Row row)
     {
-        if (!IsValidWord(row.Word))
+        if (!IsValidWord(row.word))
         {
             invalidWordText.SetActive(true);
             return;
@@ -116,7 +116,7 @@ public class Board : MonoBehaviour
 
         string remaining = word;
 
-        // check correct/incorrect letters first
+        // Check correct/incorrect letters first
         for (int i = 0; i < row.tiles.Length; i++)
         {
             Tile tile = row.tiles[i];
@@ -134,7 +134,7 @@ public class Board : MonoBehaviour
             }
         }
 
-        // check wrong spots after
+        // Check wrong spots after
         for (int i = 0; i < row.tiles.Length; i++)
         {
             Tile tile = row.tiles[i];
@@ -172,7 +172,7 @@ public class Board : MonoBehaviour
     {
         for (int i = 0; i < validWords.Length; i++)
         {
-            if (validWords[i] == word) {
+            if (string.Equals(word, validWords[i], System.StringComparison.OrdinalIgnoreCase)) {
                 return true;
             }
         }
